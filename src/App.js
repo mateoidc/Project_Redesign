@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-//app
+import React, { Component } from "react";
+
 function App() {
+<<<<<<< HEAD
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +21,9 @@ function App() {
     </div>
   ); 
   //deez nutz
+=======
+  return <div className="App">...</div>;
+>>>>>>> 04890960a7b662fb2a0d8d388b93027a15073a0a
 }
 
 export default App;
