@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  font-family: "Major Mono Display", monospace;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  position: sticky;
+  background: linear-gradient(
+      127deg,
+      rgba(35, 44, 36, 0.265),
+      rgba(34, 160, 139, 0.635)
+    ),
+    linear-gradient(
+      336deg,
+      rgba(3, 73, 237, 0.477),
+      rgba(174, 178, 204, 0.731) 50.71%
+    );
+  top: 0;
+}
+
+.menu a:hover {
+  color: #31394f;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+  margin-top: -70px;
+}
+
+.mateo {
+  display: flex;
+  justify-content: left;
+  margin-left: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  color: white;
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+  color: white;
+}
+
+#toggle {
+  display: none;
+}
+
+label:hover {
+  color: #31394f;
+}
+
+strong {
+  color: #31394f;
+}
+
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 0;
+    font-size: 30px;
+    height: 55px;
+  }
+  .menu a:hover {
+    background-color: #ff0a5386;
+    color: black;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .menu a {
+    font-size: 80px;
+  }
+  .nav {
+    font-size: 80px;
+  }
+}
